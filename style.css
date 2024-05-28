@@ -101,9 +101,26 @@ section.title{
     gap: 10px;
 }
 
-.title__profile {
+/* .title__profile {
     width: 30%;
     border-radius: 100%;
+} */
+
+.title__profile {
+    width: 40%;
+    height: 250px;
+    border-radius: 100%;
+    background-image: url('./assets/twitter-card.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title__profile:hover {
+    background-image: url('./assets/popcat2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section.about{
@@ -163,6 +180,12 @@ section.about{
     margin-bottom: 50px;
 }
 
+.skills__box:hover {
+    box-shadow: 0 0 30px 5px black;
+    transition: .3s all ease-in-out;
+    transform: scale(1.1);
+}
+
 .skills__box ul {
     display: flex;
     flex-direction: column;
@@ -209,6 +232,13 @@ section.about{
     height: 180px;
     margin-bottom: 50px;
 }
+
+.hobbies__box:hover {
+    box-shadow: 0 0 30px 5px black;
+    transition: .3s all ease-in-out;
+    transform: scale(1.1);
+}
+
 
 .hobbies__box ul {
     display: flex;
@@ -293,6 +323,12 @@ section.about{
     gap: 30px;
 }
 
+.experience__img:hover {
+    box-shadow: 0 0 30px 5px black;
+    transition: .3s all ease-in-out;
+    transform: scale(1.05);
+}
+
 .formcontato {
     display: flex;
     justify-content: center;
@@ -358,11 +394,13 @@ section.about{
     height: 30px;
     margin-bottom: 10px;
     border: none;
+    padding-left: 5px;
 }
 
 .formcontato__textarea {
     width: 100%;
     border: none;
+    padding-left: 5px;
 }
 
 .formcontato__botao {
@@ -373,6 +411,13 @@ section.about{
     background-color: blue;
     border: none;
     font-weight: 300;
+}
+
+.formcontato__botao:hover {
+    cursor: pointer;
+    background-color: #5c9cf5;
+    transition: all .3s ease-in-out;
+    transform: scale(1.08);
 }
 
 .footer {
